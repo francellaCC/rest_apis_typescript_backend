@@ -15,6 +15,7 @@ export async function connectDB() {
     } catch (error) {
         // console.log(error)
         console.log('Hubo un error al conectar a la BD') 
+        console.log(error)
     }
 }
 connectDB()
