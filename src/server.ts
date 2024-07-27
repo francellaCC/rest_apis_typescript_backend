@@ -26,7 +26,7 @@ const server = express()
 const corsOptions : CorsOptions ={
     origin:function(origen , callback){
        
-        if(origen ===  'http://localhost:5173'){
+        if(origen ===  process.env.FRONTED_URL){
             callback(null,true)
         }else{
             callback(new Error('Error de CORS'))
